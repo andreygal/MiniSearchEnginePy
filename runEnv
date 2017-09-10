@@ -1,0 +1,7 @@
+import dictutil
+
+f = open("testfile.txt")
+
+
+new = dictutil.reverseIndex(f)
+print("\n",new)
