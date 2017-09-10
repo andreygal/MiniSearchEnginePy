@@ -27,5 +27,17 @@ def orSearch(dict, wordList):
         if word in dict: docNumbers = docNumbers | dict[word]
     return docNumbers
 
+def andSearch(dict, wordList):
+        docNumbers = set()
+        wordFound = FalseK
+        for word in wordList:
+            if word in dict:
+                if not wordFound:
+                    docNumbers = dict[word]
+                    wordFound = True
+                    continue
+                docNumbers = docNumbers & dict[word]
+        return docNumbers
+
 
 

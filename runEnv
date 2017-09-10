@@ -6,6 +6,7 @@ f = open("testfile.txt")
 dict = dictutil.reverseIndex(f)
 print("\n",dict)
 
-wordList = ['will', 'third', 'laughs']
+wordList = ['will', 'what', 'first']
 
 print(dictutil.orSearch(dict, wordList))
+print(dictutil.andSearch(dict, wordList))
