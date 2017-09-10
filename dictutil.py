@@ -21,3 +21,11 @@ def reverseIndex(inputFile):
                 dict[word] = s
     return dict
 
+def orSearch(dict, wordList):
+    docNumbers = set()
+    for word in wordList:
+        if word in dict: docNumbers = docNumbers | dict[word]
+    return docNumbers
+
+
+
