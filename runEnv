@@ -4,7 +4,7 @@ f = open("testfile.txt")
 
 
 dict = dictutil.reverseIndex(f)
-print("\n",dict)
+print(dict)
 
 wordList = ['will', 'what', 'first']
 

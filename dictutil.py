@@ -29,7 +29,7 @@ def orSearch(dict, wordList):
 
 def andSearch(dict, wordList):
         docNumbers = set()
-        wordFound = FalseK
+        wordFound = False
         for word in wordList:
             if word in dict:
                 if not wordFound:
